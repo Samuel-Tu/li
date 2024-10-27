@@ -1,0 +1,48 @@
+{
+  "name": "@samuel/li",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "packageManager": "npm@10.8.2",
+  "type": "module",
+  "bin": {
+    "li": "dist/li.mjs",
+    "lr": "dist/lr.mjs",
+    "lu": "dist/lu.mjs",
+    "lb": "dist/lb.mjs"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "unbuild"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@posva/prompts": "^2.4.4",
+    "package-manager-detector": "^0.2.2",
+    "picocolors": "^1.1.1",
+    "tinyexec": "^0.3.1",
+    "tinyglobby": "^0.2.9",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "which": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.9",
+    "@types/which": "^3.0.4",
+    "unbuild": "^2.0.0"
+  }
+}
