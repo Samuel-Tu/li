@@ -14,7 +14,7 @@ async function runNi(option: runOption) {
   const oIndex = args.indexOf("-o");
   if (oIndex >= 0) args[oIndex] = "--prefer-offline";
 
-  liArgs = ["i", ...args];
+  liArgs = ["install", ...args];
 
   await x(command, liArgs, {
     nodeOptions: {
