@@ -1,6 +1,6 @@
 {
-  "name": "@samuel/li",
-  "version": "1.0.0",
+  "name": "sam-li",
+  "version": "1.0.1",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "packageManager": "npm@10.8.2",
